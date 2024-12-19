@@ -1,0 +1,309 @@
+.head3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+
+.head3>.left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    gap: 5%;
+    width: 30%;
+}
+
+.head3>.left>i {
+    font-size: 1.5rem;
+}
+
+.head3>.left>img {
+    /* width: 60%; */
+    width: 182px;
+    height: 23px;
+    cursor: pointer;
+}
+
+.head3>.middle {
+    width: 55%;
+}
+
+.head3>.middle>.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(181, 179, 179);
+    border-radius: 2px;
+    line-height: 30px;
+    width: 95%;
+}
+
+.head3>.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 15%;
+}
+
+.head3>.right i {
+    font-size: 1.4rem;
+}
+
+.head3>.right>div {
+    /* cursor pointer on only direct children of all such div which are inside .right class */
+    padding: 1.4rem 0.9rem;
+    cursor: pointer;
+}
+
+.head3>.right>div:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.head3>.right>div:nth-child(2):hover {
+    background-color: white;
+}
+
+
+.head3>.right_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.head4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem 1rem 1rem 1rem;
+}
+
+
+
+.tab_ham_hide {
+    width: 15rem;
+    height: 100vh;
+    overflow: scroll;
+    /* To adjust items in hamburger which are overflowing */
+
+    position: absolute;
+    top: 4.35rem;
+    left: -18rem;
+    line-height: 3rem;
+    list-style-type: none;
+    background-color: white;
+    color: rgb(110, 110, 110);
+    transition: 0.5s;
+    z-index: 2;
+
+    &>li {
+        padding: 0 10px;
+
+        &>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    }
+}
+
+.tab_ham_show {
+    left: 0rem;
+}
+
+.mobile_ham_hide {
+    width: 15rem;
+    height: 100vh;
+    overflow: scroll;
+    /* To adjust items in hamburger which are overflowing */
+    position: absolute;
+    top: 3.4rem;
+    left: -18rem;
+    line-height: 3rem;
+    list-style-type: none;
+    background-color: white;
+    color: rgb(110, 110, 110);
+    transition: 0.5s;
+    z-index: 2;
+
+    &>li {
+        padding: 0 10px;
+
+        &>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.mobile_ham_show {
+    left: 0rem;
+
+}
+
+.backdrop_hide_tab {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.5);
+    position: absolute;
+    top: 4.4rem;
+    left: 0;
+
+}
+
+.backdrop_show_tab {
+    display: block;
+}
+
+.backdrop_hide_mobile {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.5);
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+}
+
+.backdrop_show_mobile {
+    display: block;
+
+}
+
+.backdrop_hide_form {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(1, 1, 1, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.backdrop_show_form {
+    display: block;
+
+}
+
+
+
+.head4>.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head4>.top>.left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.head4>.top>.left>i {
+    font-size: 1.5rem;
+}
+
+.head4>.top>.left>img {
+    width: 68px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.head4>.top>.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.head4>.bottom>.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(181, 179, 179);
+    border-radius: 2px;
+    line-height: 30px;
+    width: 85%;
+}
+
+/* 379px */
+
+@media (min-width: 270px) and (max-width: 767.32px) {
+
+    .head1,
+    .head2,
+    .head3,
+    .timeout_form_hide {
+        display: none;
+    }
+
+    .footer_box {
+        grid-template-columns: 100%;
+        /* grid-template-rows: 50% 50%; */
+    }
+
+    .footer_box>.offering {
+        grid-column: 1/2;
+    }
+
+    .footer_box>.company {
+        grid-column: 1/2;
+    }
+
+    .footer_box>.partner {
+        grid-column: 1/2;
+
+    }
+
+    .footer_box>.resource {
+        grid-column: 1/2;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023.32px) {
+
+    .head1,
+    .head2,
+    .head4,
+    .timeout_form_hide {
+        display: none;
+    }
+
+    .footer_box {
+        grid-template-columns: 50% 50%;
+        /* grid-template-rows: 50% 50%; */
+    }
+
+    .footer_box>.offering {
+        grid-column: 1/2;
+    }
+
+    .footer_box>.company {
+        grid-column: 2/3;
+    }
+
+    .footer_box>.partner {
+        grid-column: 1/2;
+
+    }
+
+    .footer_box>.resource {
+        grid-column: 2/3;
+
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .head3,
+    .head4 {
+        display: none;
+    }
+}

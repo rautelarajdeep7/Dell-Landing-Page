@@ -1,0 +1,37 @@
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: rgba(17,24,34,255); */
+    background-image: linear-gradient(to bottom right, #0672cb, black);
+    /* width: 100vw; */
+    gap: 6rem;
+    padding: 3.5rem 0;
+    margin: auto;
+}
+
+.counter>div{
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 5px;
+    background-color: rgba(1,43,89,255);
+    background-image: linear-gradient(to bottom left, rgba(1,43,89,255) 88% , white);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.product_count>div:nth-child(1), .global_count>div:nth-child(1), .awards_count>div:nth-child(1){
+    font-size: 4rem;
+}
+
+.product_count>div:nth-child(2), .global_count>div:nth-child(2), .awards_count>div:nth-child(2){
+    font-size: 1.6rem;
+}
+
+.product_count>div:nth-child(3), .global_count>div:nth-child(3), .awards_count>div:nth-child(3){
+    font-size: 0.7rem;
+}

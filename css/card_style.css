@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cardbox {
+    /* background-color: rgba(17, 24, 34, 255); */
+    background-image: linear-gradient(to bottom left, rgb(42, 42, 42) 5% , rgb(1, 1, 145));
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 0 3rem 0;
+}
+
+.top4,
+.bottom4 {
+    display: flex;
+}
+
+.card {
+    width: 13rem;
+    height: 15rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin: 1rem;
+    background-color: white
+}
+
+.card_image {
+    width: 100%;
+    height: 70%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 0.8rem;
+}
+
+.card1_image {
+    background-image: url(../images/dell_card_img/1.avif);
+}
+
+.card2_image {
+    background-image: url(../images/dell_card_img/2.psd);
+}
+
+.card3_image {
+    background-image: url(../images/dell_card_img/3.avif);
+}
+
+.card4_image {
+    background-image: url(../images/dell_card_img/4.png);
+}
+
+.card5_image {
+    background-image: url(../images/dell_card_img/5.psd);
+}
+
+.card6_image {
+    background-image: url(../images/dell_card_img/6.avif);
+}
+
+.card7_image {
+    background-image: url(../images/dell_card_img/7.avif);
+}
+
+.card8_image {
+    background-image: url(../images/dell_card_img/8.avif);
+}
+
+
+
+
+.text {
+    text-align: center;
+    width: 100%;
+
+    &>p:nth-child(2) {
+        color: red;
+    }
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10.5rem;
+    margin-top: 1rem;
+    width: 2rem;
+    align-items: center;
+    gap: 1.8rem;
+    /* top: 1rem;
+    right: 1rem; */
+    opacity: 0;
+    transition: 0.2s;
+}
+
+
+.card:hover .icon {
+    opacity: 1;
+}
+
+
+.red_heart {
+    color: red;
+}
+
+.fa-heart:active {
+    color: red;
+    scale: 0.9;
+
+}
+
+.circle {
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 50px;
+    padding: 0.5rem;
+}

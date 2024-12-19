@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body_overflow_stop {
+    overflow-y: hidden;
+}
+
+header {
+    /* width: 100vw; */
+    color: rgb(110, 110, 110);
+    background-color: white;
+    font-size: 14px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid rgb(235, 233, 233);
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.03rem 1rem 0 1rem;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    height: 50%;
+    gap: 1rem;
+}
+
+.left {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+
+    /* flex-wrap: wrap; */
+    /* gap: 3%; */
+    /* width: 62%;  */
+}
+
+.head1>.left>img {
+    width: 206px;
+    cursor: pointer;
+}
+
+.head1>.middle {
+    width: 32%;
+}
+
+.head1>.middle>.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(181, 179, 179);
+    border-radius: 2px;
+    line-height: 30px;
+    /* width: 100%; */
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* flex-wrap: wrap; */
+    /* width: 44%; */
+
+
+}
+
+.right>div {
+    /* cursor pointer on only direct children of all such div which are inside .right class */
+    padding: 1.4rem 0.9rem;
+    cursor: pointer;
+}
+
+.right>div:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.right>div:nth-child(2):hover {
+    background-color: white;
+}
+
+
+.right_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.head2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 50%;
+    padding-left: 0.9rem;
+}
+
+.head2 div {
+    background-color: white;
+}
+
+.head2>div {
+    padding: 0.8rem 1.1rem;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    position: relative;
+}
+
+.head2>div:hover {
+    background-color: rgb(244, 240, 240);
+    border-color: grey;
+
+    &>div {
+        display: block;
+    }
+}
+
+.icn {
+    color: grey;
+}
+
+.glass {
+    font-size: 16px;
+}
+
+[name="search"] {
+    outline: none;
+    border: none;
+    width: 95%;
+}
+
+.signin {
+    position: relative;
+
+    &:hover>.signin_items {
+        display: block;
+    }
+}
+
+.signin_items {
+    display: none;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    width: 300px;
+    align-items: center;
+    /* line-height: 25px; */
+    background-color: rgb(247, 247, 247);
+    padding: 18px 18px 12px 18px;
+    border-radius: 2px;
+    cursor: default;
+    /* setting it default because even normal text were getting pointer as this class is inside .signin class which already has css settings to get pointer. So, from this parent, all child class are geting pointer which we don't require for all children */
+
+    &>div:nth-child(1) {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+
+    &>div:nth-child(2)>ul {
+        font-size: 14px;
+        line-height: 35px;
+        list-style-position: inside;
+
+        /* This property sets position of list-item marker(bullet point) 
+        inside means, marker will be inside list item as it is a part of list item. outside means outside list item  */
+        &>li {
+            line-height: 20px;
+        }
+    }
+
+    &>div {
+        line-height: 45px;
+    }
+
+    &>div>button {
+        width: 99%;
+        line-height: 30px;
+        border: 1px solid #0672cb;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #cadff0;
+        }
+    }
+
+}
+
+#signin_btn {
+    background-color: #0672cb;
+    border: none;
+
+    &:hover {
+        background-color: #0560ab;
+    }
+}
+
+
+.cart {
+    position: relative;
+
+    &:hover>.cart_item {
+        display: block;
+    }
+}
+
+.cart_item {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 13.5rem;
+    height: 7.5rem;
+    background-color: rgb(247, 247, 247);
+    padding: 0.9rem;
+    line-height: 2rem;
+    cursor: default;
+    /* setting it default because this class is inside .cart class which already has css settings to get pointer. So, from its parent, this child class is geting pointer which we don't want */
+
+    &>div:nth-child(1) {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    &>div:nth-child(2) {
+        font-size: 0.9rem;
+    }
+}
+
+/* ========================================================================= */
+
+.left-right {
+    /* for .head2>div>div>div which has text and right angle icon*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.head2>.nav_item>div {
+    display: none;
+    cursor: pointer;
+    top: 105%;
+    left: 0%;
+    border: 1px solid rgb(210, 210, 210);
+
+    position: absolute;
+
+    &>div>div {
+        border: 1px solid rgb(210, 210, 210);
+        background-color: rgb(237, 237, 237);
+
+    }
+
+    &>div:hover {
+        background-color: rgb(238, 236, 236);
+    }
+
+    &>div>div>div:hover {
+        background-color: rgb(206, 205, 205);
+    }
+
+    &>div,
+    >div>div>div {
+        padding: 0.8rem 1.1rem;
+    }
+
+}
+
+.head2>.nav_item:nth-child(2)>div {
+    width: 15rem;
+
+    &>div:nth-child(2):hover {
+        &>div {
+            display: block;
+        }
+    }
+
+    &>div:nth-child(2)>div {
+        width: 15rem;
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0%;
+    }
+
+    &>div:nth-child(3):hover {
+        &>div {
+            display: block;
+        }
+    }
+
+    &>div:nth-child(3)>div {
+        width: 15rem;
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0%;
+    }
+
+    &>div:nth-child(4):hover {
+        &>div {
+            display: block;
+        }
+    }
+
+    &>div:nth-child(4)>div {
+        width: 15rem;
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0%;
+    }
+
+
+    /* &>div:nth-child(3)>div{
+        display: none;
+
+    }
+    &>div:nth-child(4)>div{
+        display: none;
+
+    } */
+
+}
+
+
+.head2>.nav_item:nth-child(5)>div {
+    width: 16rem;
+
+}
+
+.head3 {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.9%;
+    padding-right: 1.5%;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 50%; */
+}
+
+.faq {
+    /* background-color: rgb(62 , 26, 145); */
+    /* background-color: #0560ab; */
+    /* background-color: whitesmoke; */
+
+    background-image: linear-gradient(to bottom left, #2305ab 1%, white);
+    padding: 4rem 0;
+}
+
+.faq>h2 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    width: 65%;
+    margin: 0.4rem auto;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.ques_box {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    /* width: 800px; */
+    width: 65%;
+    margin: 0.8rem auto;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 10px;
+    background-color: white;
+    height: 52px;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 0;
+    /* made padding 0 so that only .box get clicked everywhere and no space is left where clicking on it doesn't expand the .main */
+}
+
+.ques_box:hover {
+    /* box-shadow: 2px 2px 9px rgb(62, 26, 145); */
+    box-shadow: 4px 4px 2px rgb(55, 55, 55);
+
+}
+
+.question {
+    font-size: 1rem;
+    /* font-family: Roboto, Arial, Helvetica, sans-serif; */
+    font-weight: 500;
+    line-height: 24px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question>div>i{
+        transform: rotateX(180deg);
+}
+
+.down{
+    transform: rotateX(180deg);
+}
+
+.question:hover {
+    cursor: pointer;
+    color: rgb(62, 26, 145);
+    box-shadow: 1px 1px 2px rgb(62, 26, 145);
+}
+
+
+.answer {
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+}
+
+.expand_class {
+    overflow: scroll;
+    height: 150px;
+}
+
+footer {
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.footer_box {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 85%;
+    margin: auto;
+    gap: 1rem;
+
+}
+
+.footer_box>.offering {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    grid-column: 1/2;
+    color: rgb(99, 99, 99);
+    line-height: 2rem;
+}
+
+.footer_box>.company {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    grid-column: 2/3;
+    color: rgb(99, 99, 99);
+    line-height: 2rem;
+}
+
+.footer_box>.partner {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    grid-column: 3/4;
+    color: rgb(99, 99, 99);
+    line-height: 2rem;
+}
+
+.footer_box>.resource {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    grid-column: 4/5;
+    color: rgb(99, 99, 99);
+    line-height: 2rem;
+}
+
+.footer_box li {
+    list-style: none;
+    color: rgb(110, 110, 110);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer_box li:hover {
+    text-decoration: underline;
+}
+
+
+.timeout_form_hide {
+    display: none;
+    position: relative;
+    background-color: white;
+    position: fixed;
+    /* word-wrap: */
+    top: 6%;
+    left: 37%;
+    padding: 0.8rem 1.4rem;
+    border: 1px solid gray;
+    width: 290px;
+    /* height: 450px; */
+}
+
+.timeout_form_show {
+    display: inline-block;
+}
+
+
+.timeout_form_hide>div>h3 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 2rem;
+    text-decoration: underline;
+    /* font-size: 1rem; */
+}
+
+.timeout_form_hide>div>p {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(64, 63, 63);
+}
+
+.timeout_form_hide>form>label {
+    margin-top: 8px;
+}
+
+.timeout_form_hide>form>label {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    /* font-weight: 400; */
+    font-size: 12px;
+    color: rgb(64, 63, 63);
+}
+
+.timeout_form_hide>form>input {
+    width: 100%;
+    height: 1.8rem;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.timeout_form_hide>form>textarea {
+    width: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    height: 4.1rem;
+    outline: none;
+}
+
+.timeout_form_hide [type="submit"] {
+    /* background-color: #33308b; */
+    cursor: pointer;
+    background-color: #43409d;
+    color: white;
+}
+
+.timeout_form_hide .close {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(110, 110, 110);
+    border-radius: 50%;
+    color: rgb(110, 110, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeout_form_hide .close>i {
+    font-size: 0.85rem;
+}
+
+
+
+.timeout_form_hide .close:hover {
+    color: red;
+    border-color: black;
+}
+
+.timeout_form_hide .close:active {
+    color: red;
+    border-color: black;
+    scale: 0.9;
+}
+
+
+.Error{
+    visibility: hidden;
+    color: red;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.NoError{
+    /* visibility: hidden; */
+    color: green;
+}
+
+
+
+/* font-family: Roboto,
+Arial,
+Helvetica,
+sans-serif; */
+
+
+
+
+/*   Commented and pasted code to dell_style_mobile.css bcz in html file, this file comes first and mobile css file comes later 
+    which is causing issue as head1, head2, head3 all are visible at device-width 1024px
+   @media (max-width: 1023.32px){
+    .head1, .head2{
+        display: none;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    .head3{
+        display: none;
+    } 
+} */
+
+/* @media (min-width: 480px ) and (max-width: 1024px){
+    .head1, .head2{
+        display: none;
+    }
+}
+@media (min-width: 1024px){
+    .head1, .head2{
+        display: flex;
+    }
+
+     .head3 {
+        display: none;
+    }
+} */

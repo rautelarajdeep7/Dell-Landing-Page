@@ -1,0 +1,61 @@
+/* .head3{
+    width: 100vw;
+} */
+
+.head3>.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* gap: 6% ; */
+    width: 85%;
+}
+
+.head3>.left>i{
+    font-size: 1.4rem;
+}
+
+.head3>.left>img{
+    width: 23%;
+    cursor: pointer;
+}
+
+.head3 .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(181, 179, 179);
+    border-radius: 2px;
+    line-height: 30px;
+    width: 60%;
+}
+
+
+.head3>.right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+    width: 15%;
+}
+
+.head3>.right>div{  /* cursor pointer on only direct children of all such div which are inside .right class */
+    padding: 1.4rem 0.9rem;
+    cursor: pointer;
+}
+
+.head3>.right>div:hover{
+    background-color: rgb(234, 234, 234);
+}
+
+.head3>.right>div:nth-child(2):hover{
+    background-color: white;
+}
+
+ 
+.head3>.right_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

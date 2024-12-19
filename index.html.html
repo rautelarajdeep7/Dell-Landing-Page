@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dell navbar</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/dell_style.css">
+    <link rel="stylesheet" href="./css/dell_style_mobile.css">
+    <link rel="stylesheet" href="./css/card_style.css">
+    <link rel="stylesheet" href="./css/counter_style.css">
+
+    <!-- <script src="./js/dell_js.js" defer></script> -->
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="head1">
+            <div class="left">
+                <img src="./images/logo/dell_logo.png" alt="dell logo">
+            </div>
+            <div class="middle">
+                <div class="search">
+                    <input type="text" placeholder="  Search Dell" name="search"><i
+                        class="fa-solid fa-magnifying-glass glass"></i>&nbsp&nbsp&nbsp
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right_item signin"><i class="fa-regular fa-user icn"></i>&nbspSign In&nbsp <i
+                        class="fa-solid fa-angle-down icn"></i>
+                    <div class="signin_items">
+                        <div>Welcome to Dell</div>
+                        <div>
+                            <ul>
+                                My Account
+                                <li>Place orders quickly and easily</li>
+                                <li>View orders and track your shipping status</li>
+                                <li>Create and access a list of your products</li>
+                            </ul>
+                        </div>
+
+                        <div><button id="signin_btn">Sign In</button></div>
+                        <div><button>Create an Account</button></div>
+                        <div><button>Premier Sign</button></div>
+                        <div><button>Partner Program Sign In</button></div>
+                    </div>
+
+                </div>
+
+                <div class="right_item"><i class="fa-solid fa-headphones icn"></i>&nbspContact Us</div>
+                <div class="right_item"><i class="fa-solid fa-globe icn"></i> &nbsp IN/EN &nbsp<i
+                        class="fa-solid fa-angle-down icn"></i> </div>
+                <div class="right_item cart"><i class="fa-solid fa-cart-shopping icn"></i> &nbsp Cart &nbsp<i
+                        class="fa-solid fa-angle-down icn"></i>
+                    <div class="cart_item">
+                        <div>Your Dell.com Carts</div>
+                        <div>Your cart is empty</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <nav class="head2">
+            <div class="nav_item">Artificial Intelligence </div>
+            <div class="nav_item">IT Infrastructure <i class="fa-solid fa-angle-down icn"></i>
+                <div class="it_infra_item">
+                    <div>Dell APEX Multicloud and aaS</div>
+                    <div class="left-right">Products<i class="fa-solid fa-chevron-right"></i>
+                        <div class="product_items">
+                            <div>Servers</div>
+                            <div>Data Storage</div>
+                            <div>Data Protecttion</div>
+                            <div>Jyperconverged Infrastructure</div>
+                            <div>Networking</div>
+                            <div>Infrastructure Accessories</div>
+                            <div>AIOps & IT Obervabolity</div>
+                        </div>
+                    </div>
+                    <div class="left-right">Workloads<i class="fa-solid fa-chevron-right"></i>
+                        <div class="workloads_items">
+                            <div>View All Workloads</div>
+                            <div>Analytics</div>
+                            <div>Cloud Solutions</div>
+                            <div>Data Management</div>
+                            <div>Edge Solutions</div>
+                            <div>Kubernetes and Containers</div>
+                            <div>Security Solutions</div>
+                            <div>Virtual Desktop Infrastructure</div>
+                        </div>
+                    </div>
+                    <div class="left-right">Industry<i class="fa-solid fa-chevron-right"></i>
+                        <div class="industry_items">
+                            <div>View All Industry</div>
+                            <div>Digital Cities</div>
+                            <div>Energy, Climate Action & Sustainability</div>
+                            <div>Financial</div>
+                            <div>Healthcare & Life Sciences</div>
+                            <div>Higher Education</div>
+                            <div>K12 Education</div>
+                            <div>Retail</div>
+                            <div>Safety & Security</div>
+                            <div>Telecommunications</div>
+                            <div>Utilities</div>
+                        </div>
+                    </div>
+                    <div>Payment Solutions</div>
+                    <div>Developers & DevOps</div>
+                </div>
+            </div>
+            <div class="nav_item">Computers & Accessories <i class="fa-solid fa-angle-down icn"></i></div>
+            <div class="nav_item">Services <i class="fa-solid fa-angle-down icn"></i></div>
+            <div class="nav_item">Support <i class="fa-solid fa-angle-down icn"></i>
+                <div class="support_item">
+                    <div>Support Home</div>
+                    <div>Support Library</div>
+                    <div>Support Videos</div>
+
+                </div>
+            </div>
+            <div class="nav_item">Deals <i class="fa-solid fa-angle-down icn"></i></div>
+            <div class="nav_item">Find a Store</div>
+
+        </nav>
+
+        <!--  ========================================== Header for Tablet ========================================== -->
+
+        <div class="head3">
+            <div class="left">
+                <i class="fa-solid fa-bars" onclick="ham_toggle_tab()"></i>
+                <ul class="tab_ham_hide">
+                    <li>Artificial Intelligence</li>
+                    <li>
+                        <div>IT Infrastructure <i class="fa-solid fa-angle-right"></i></div>
+                    </li>
+                    <li>
+                        <div>Computers & Accessories <i class="fa-solid fa-angle-right"></i></div>
+                    </li>
+                    <li>
+                        <div>Services <i class="fa-solid fa-angle-right"></i></div>
+                    </li>
+                    <li>
+                        <div>Support <i class="fa-solid fa-angle-right"></i></div>
+                    </li>
+                    <li>
+                        <div>Deals <i class="fa-solid fa-angle-right"></i></div>
+                    </li>
+                    <li>Find a Store</li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><i class="fa-solid fa-headphones icn"></i>&nbsp &nbspContact Us</li>
+                    <li><i class="fa-solid fa-globe icn"></i> &nbsp IN/EN &nbsp</li>
+
+                </ul>
+                <img src="./images/logo/dell_logo.png" alt="dell logo">
+            </div>
+
+            <div class="middle">
+                <div class="search">
+                    <input type="text" placeholder="  Search Dell" name="search"><i
+                        class="fa-solid fa-magnifying-glass glass"></i>&nbsp&nbsp&nbsp
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right_item signin"><i class="fa-regular fa-user icn"></i>
+                    <div class="signin_items">
+                        <div>Welcome to Dell</div>
+                        <div>
+                            <ul>
+                                My Account
+                                <li>Place orders quickly and easily</li>
+                                <li>View orders and track your shipping status</li>
+                                <li>Create and access a list of your products</li>
+                            </ul>
+                        </div>
+
+                        <div><button id="signin_btn">Sign In</button></div>
+                        <div><button>Create an Account</button></div>
+                        <div><button>Premier Sign</button></div>
+                        <div><button>Partner Program Sign In</button></div>
+                    </div>
+
+                </div>
+
+                <div class="right_item cart"><i class="fa-solid fa-cart-shopping"></i>
+                    <div class="cart_item">
+                        <div>Your Dell.com Carts</div>
+                        <div>Your cart is empty</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!--  ========================================== Header for Mobile ========================================== -->
+
+        <div class="head4">
+            <div class="top">
+                <div class="left">
+                    <i class="fa-solid fa-bars" onclick="ham_toggle_mobile()"></i>
+                    <ul class="mobile_ham_hide">
+                        <li>Artificial Intelligence</li>
+                        <li>
+                            <div>IT Infrastructure <i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                        <li>
+                            <div>Computers & Accessories <i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                        <li>
+                            <div>Services <i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                        <li>
+                            <div>Support <i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                        <li>
+                            <div>Deals <i class="fa-solid fa-angle-right"></i></div>
+                        </li>
+                        <li>Find a Store</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><i class="fa-solid fa-headphones icn"></i>&nbsp &nbspContact Us</li>
+                        <li><i class="fa-solid fa-globe icn"></i> &nbsp IN/EN &nbsp</li>
+                    </ul>
+                    <img src="./images/logo/dell_logo2.png" alt="dell logo">
+                </div>
+
+                <div class="right">
+                    <div class="right_item signin"><i class="fa-regular fa-user icn"></i>
+                        <div class="signin_items">
+                            <div>Welcome to Dell</div>
+                            <div>
+                                <ul>
+                                    My Account
+                                    <li>Place orders quickly and easily</li>
+                                    <li>View orders and track your shipping status</li>
+                                    <li>Create and access a list of your products</li>
+                                </ul>
+                            </div>
+
+                            <div><button id="signin_btn">Sign In</button></div>
+                            <div><button>Create an Account</button></div>
+                            <div><button>Premier Sign</button></div>
+                            <div><button>Partner Program Sign In</button></div>
+                        </div>
+
+                    </div>
+
+                    <div class="right_item cart"><i class="fa-solid fa-cart-shopping"></i>
+                        <div class="cart_item">
+                            <div>Your Dell.com Carts</div>
+                            <div>Your cart is empty</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="bottom">
+                <div class="search">
+                    <input type="text" placeholder="  Search Dell" name="search"><i
+                        class="fa-solid fa-magnifying-glass glass"></i>&nbsp&nbsp&nbsp
+                </div>
+            </div>
+            <!-- <div class="backdrop_hide_mobile" onclick="ham_toggle_mobile()"></div> -->
+
+        </div>
+
+
+
+
+    </header>
+
+    <!-- ===================== HEADER CODE ENDS HERE ===================== -->
+
+
+
+    <!-- ==================== DELL LAPTOP CARDS BELOW ==================== -->
+
+    <section>
+        <div class="cardbox">
+            <!-- <div class="top4"> -->
+            <div class="card">
+                <div class="card_image card1_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(0)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Creators and Creativity</h3>
+                    <p>Starting at ₹1,55,289.97</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card_image card2_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(1)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Business Performance and Collaboration</h3>
+                    <p>Starting at ₹94,300.18</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card_image card3_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(2)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Versatile Performance</h3>
+                    <p>Starting at ₹29,790.00</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card_image card4_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(3)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Small Business Productivity</h3>
+                    <p>Starting at ₹35,990.00</p>
+                </div>
+
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="bottom4"> -->
+
+
+
+            <div class="card">
+                <div class="card_image card5_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(4)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Immersive Gaming Experiences</h3>
+                    <p>Starting at ₹1,55,490.01</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card_image card6_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(5)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Versatile Performance</h3>
+                    <p>Starting at ₹29,790.00</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card_image card7_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(6)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Gaming Performance</h3>
+                    <p>Starting at ₹69,990.01</p>
+                </div>
+
+            </div>
+
+            <div class="card">
+                <div class="card_image card8_image">
+                    <div class="icon">
+                        <i class="fa-solid fa-heart circle" onclick="like(7)"></i>
+                        <i class="fa-solid fa-cart-shopping circle"></i>
+                    </div>
+
+                </div>
+
+                <div class="text">
+                    <h3>Cloud-native Versatility</h3>
+                    <p>Starting at ₹29,790.00</p>
+                </div>
+
+            </div>
+
+
+            <!-- </div> -->
+    </section>
+
+    <hr>
+
+
+        <!-- ==================== Counter Cards ==================== -->
+
+    
+    <div class="counter">
+        <div class="product_count">
+            <div>0+</div>
+            <div>Client</div>
+            <div>Still innovating everday</div>
+        </div>
+        <div class="global_count">
+            <div>0+</div>
+            <div>Countries</div>
+            <div>Expansion over the years</div>
+        </div>
+        <div class="awards_count">
+            <div>0</div>
+            <div>Awards</div>
+            <div>Multiple Awards for Quality and Customer Satisfaction.</div>
+        </div>
+    </div>
+
+
+    <!-- ==================== FAQ section ==================== -->
+
+
+    <section class="faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="ques_box">
+            <div class="question" onclick="expand_faq(event)">
+                Shipping
+                <div onclick="expand_faq2(event)"><i class="fa-solid fa-angle-up" onclick="expand_faq3(event)"></i></div>
+            </div>
+            <div class="answer"><b>Which carriers are used for shipping my Dell Order?</b>
+                <p>Dell partners with Bluedart, YCH and DB Schenker to deliver your order.
+                    Tracking information can be found once your order has been handed over to the Carrier.
+                    You can view your order tracking details by entering your order number on your Online Order Support.
+                </p>
+            </div>
+        </div>
+
+        <div class="ques_box">
+            <div class="question" onclick="expand_faq(event)">
+                Delivery
+                <div onclick="expand_faq2(event)"><i class="fa-solid fa-angle-up" onclick="expand_faq3(event)"></i></div>
+            </div>
+            <div class="answer"><b>Will I be notified when my Dell Order is about to be delivered?</b>
+                <p>There will be no notification prior to carrier delivery. The carrier link provided on your Online
+                    Order Support will provide the latest delivery information.</p>
+            </div>
+        </div>
+
+        <div class="ques_box">
+            <div class="question" onclick="expand_faq(event)">
+                Cancellations
+                <div onclick="expand_faq2(event)"><i class="fa-solid fa-angle-up" onclick="expand_faq3(event)"></i>
+                </div>
+            </div>
+            <div class="answer">
+                <b>Can I cancel my order?</b>
+                <p>Before Production/Packaging: It may be possible to cancel your order before the production
+                    and
+                    packaging process starts. Please contact customer care to request a cancellation of your
+                    order.
+                    After Production/Shipped Orders: Orders that have already started the production process or
+                    that
+                    have shipped cannot be cancelled. However, you can exercise your right to cancel.</p>
+            </div>
+        </div>
+
+        <div class="ques_box">
+            <div class="question" onclick="expand_faq(event)">
+                Missing, Wrong or Damaged Products
+                <div onclick="expand_faq2(event)"><i class="fa-solid fa-angle-up" onclick="expand_faq3(event)"></i></div>
+            </div>
+            <div class="answer"><b>What do I do if my order arrives and something is physically damaged?</b>
+                <p>If you have received your order in a damaged box and/or the product has physical damage
+                    please
+                    contact Dell Customer Care by clicking on Contact Us from the “Action Menu” from your
+                    Online Order
+                    Support.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+
+    <footer>
+        <div class="footer_box">
+            <ul class="offering">Our Offerings
+                <li>Artificial Intelligence</li>
+                <li>Products</li>
+                <li>Solutions</li>
+                <li>Services</li>
+                <li>Deals</li>
+            </ul>
+
+            <ul class="company">Our company
+                <li>Who We Are</li>
+                <li>Careers</li>
+                <li>Dell Technologies Capital</li>
+                <li>Investors</li>
+                <li>Newsroom</li>
+            </ul>
+
+            <ul class="partner">Our Partners
+                <li>Find a Partner</li>
+                <li>OEM Solutions</li>
+                <li>Partner Program</li>
+            </ul>
+
+            <ul class="resource">Resources
+                <li>Blog</li>
+                <li>Dell Rewards</li>
+                <li>Evenets</li>
+                <li>E-mail Sign-Up</li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- ==================== BACKDROP ==================== -->
+
+
+    <div class="backdrop_hide_mobile" onclick="ham_toggle_mobile()"></div>
+    <div class="backdrop_hide_tab" onclick="ham_toggle_tab()"></div>
+    <div class="backdrop_hide_form" onclick="timeout_form_toggle()"></div>
+
+
+    <!-- ==================== TIMEOUT FORM ==================== -->
+
+
+    <div class="timeout_form_hide">
+        <div>
+            <h3>Enquiry Form</h3>
+            <p>Please fill out the form. Our representive will reach out to you within 24 hours. </p>
+        </div><br>
+        <form action="">
+
+            <label for="username">Username</label> <br>
+            <input type="text" name="username" autofocus placeholder=" Your username" oninput="Check(event)"> <span class="Error">Invalid input</span><br>
+
+            <label for="pass">Password</label> <br>
+            <input type="password" name="pass" placeholder=" Your password" oninput="Check(event)"> <span class="Error">Invalid input</span> <br>
+
+            <label for="E-mail">E-mail</label> <br>
+            <input type="text" name="email" placeholder=" E-mail" oninput="Check(event)"> <span class="Error">Invalid input</span> <br>
+
+            <label for="mobile">Contact No.</label> <br>
+            <input type="tel" name="mobile" placeholder=" Phone No." oninput="Check(event)"> <span class="Error">Invalid input</span> <br>
+
+            <label for="enquiry">Enquiry</label> <br>
+            <textarea name="enquiry" placeholder=" Enter your queries"></textarea> <br>
+
+            <input type="submit">
+        </form>
+
+        <div class="close" onclick="timeout_form_toggle()"><i class="fa-solid fa-xmark"></i></div>
+
+    </div>
+
+
+    <script src="./js/dell_js.js"></script>
+
+</body>
+
+</html>
